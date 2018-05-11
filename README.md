@@ -20,10 +20,10 @@ Current build status
 
 Current release info
 ====================
-[![Conda Recipe](https://img.shields.io/badge/recipe-r--glmmtmb-green.svg)](https://anaconda.org/conda-forge/r-glmmtmb)
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-glmmtmb.svg)](https://anaconda.org/conda-forge/r-glmmtmb)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-glmmtmb.svg)](https://anaconda.org/conda-forge/r-glmmtmb)
-[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-glmmtmb.svg)](https://anaconda.org/conda-forge/r-glmmtmb)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--glmmtmb-green.svg)](https://anaconda.org/conda-forge/r-glmmtmb) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-glmmtmb.svg)](https://anaconda.org/conda-forge/r-glmmtmb) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-glmmtmb.svg)](https://anaconda.org/conda-forge/r-glmmtmb) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-glmmtmb.svg)](https://anaconda.org/conda-forge/r-glmmtmb) |
 
 Installing r-glmmtmb
 ====================
