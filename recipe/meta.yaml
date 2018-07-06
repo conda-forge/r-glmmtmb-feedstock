@@ -1,4 +1,4 @@
-{% set version = "0.2.1.0" %}
+{% set version = "0.2.2.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/glmmTMB_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/glmmTMB/glmmTMB_{{ version }}.tar.gz
-  sha256: 001c9902a951c0d303b2874d5e00caa026e72a30cd2da0025a20b8534e8fd2d6
+  sha256: c5176f4f00ca4b900f49d3744bbcc6772fc31f431bcbf2431db64a5da99c97b2
 
 build:
   number: 0
