@@ -1,5 +1,4 @@
-{% set version = "0.2.2.0" %}
-
+{% set version = '0.2.2.0' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,49 +9,51 @@ package:
 source:
   fn: glmmTMB_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/glmmTMB_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/glmmTMB/glmmTMB_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/glmmTMB_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/glmmTMB/glmmTMB_{{ version }}.tar.gz
   sha256: c5176f4f00ca4b900f49d3744bbcc6772fc31f431bcbf2431db64a5da99c97b2
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 2
   skip: true  # [win32]
-
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
-    - posix                # [win]
-    - {{ compiler('c') }}        # [unix]
-    - {{ compiler('m2w64_c') }}  # [win]
-    - {{ compiler('cxx') }}        # [unix]
-    - {{ compiler('m2w64_cxx') }}  # [win]
+    - {{ compiler('c') }}        # [not win]
+    - {{ compiler('cxx') }}      # [not win]
+    - {{native}}toolchain        # [win]
+    - {{posix}}filesystem        # [win]
+    - {{posix}}make
+    - {{posix}}sed               # [win]
+    - {{posix}}coreutils         # [win]
+    - {{posix}}zip               # [win]
   host:
     - r-base
     - r-matrix
     - r-rcppeigen
-    - r-tmb >=1.7.6
+    - r-tmb >=1.7.13
     - r-lme4 >=1.1_10
     - r-nlme
-
   run:
     - r-base
+    - {{native}}gcc-libs         # [win]
     - r-matrix
     - r-rcppeigen
-    - r-tmb >=1.7.6
+    - r-tmb >=1.7.13
     - r-lme4 >=1.1_10
     - r-nlme
 
 test:
   commands:
-    - $R -e "library('glmmTMB')"  # [not win]
+    - $R -e "library('glmmTMB')"           # [not win]
     - "\"%R%\" -e \"library('glmmTMB')\""  # [win]
 
 about:
-  home: https://github.com/glmmTMB/glmmTMB
+  home: https://github.com/glmmTMB
   license: AGPL-3
   summary: Fit linear and generalized linear mixed models with various extensions, including
     zero-inflation. The models are fitted using maximum likelihood estimation via 'TMB'
@@ -68,4 +69,5 @@ extra:
     - daler
     - jdblischak
     - cbrueffer
+    - dbast
     - ccwang002
