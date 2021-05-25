@@ -3,7 +3,7 @@ About r-glmmtmb
 
 Home: https://github.com/glmmTMB
 
-Package license: AGPL-3
+Package license: AGPL-3.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-glmmtmb-feedstock/blob/master/LICENSE.txt)
 
