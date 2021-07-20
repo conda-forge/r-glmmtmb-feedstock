@@ -1,4 +1,4 @@
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/glmmTMB_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/glmmTMB/glmmTMB_{{ version }}.tar.gz
-  sha256: 9df6d403911b8bd6d08d4d1349bd938a29f250d66d00a345f805ecaa363418ca
+  sha256: e7d719190f470d9e40f9099c53ff04e224cda938af0d8b8c09c00459d0803bd6
 
 build:
   merge_build_host: true  # [win]
