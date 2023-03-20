@@ -1,11 +1,22 @@
+About r-glmmtmb-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-glmmtmb-feedstock/blob/main/LICENSE.txt)
+
 About r-glmmtmb
-===============
+---------------
 
 Home: https://github.com/glmmTMB
 
 Package license: AGPL-3.0-only
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-glmmtmb-feedstock/blob/main/LICENSE.txt)
+Summary: Fit linear and generalized linear mixed models with various extensions, including zero-inflation. The models are fitted using maximum likelihood estimation via 'TMB' (Template Model Builder). Random effects are assumed to be Gaussian on the scale of the linear predictor and are integrated out using the Laplace approximation. Gradients are calculated using automatic differentiation.
+About r-glmmtmb
+---------------
+
+Home: https://github.com/glmmTMB
+
+Package license: AGPL-3.0-only
 
 Summary: Fit linear and generalized linear mixed models with various extensions, including zero-inflation. The models are fitted using maximum likelihood estimation via 'TMB' (Template Model Builder). Random effects are assumed to be Gaussian on the scale of the linear predictor and are integrated out using the Laplace approximation. Gradients are calculated using automatic differentiation.
 
