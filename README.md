@@ -3,6 +3,7 @@ About r-glmmtmb-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-glmmtmb-feedstock/blob/main/LICENSE.txt)
 
+
 About r-glmmtmb
 ---------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/glmmTMB
 Package license: AGPL-3.0-only
 
 Summary: Fit linear and generalized linear mixed models with various extensions, including zero-inflation. The models are fitted using maximum likelihood estimation via 'TMB' (Template Model Builder). Random effects are assumed to be Gaussian on the scale of the linear predictor and are integrated out using the Laplace approximation. Gradients are calculated using automatic differentiation.
+
 About r-glmmtmb
 ---------------
 
@@ -24,7 +26,14 @@ Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>Travis</td>
+    <td>
+      <a href="https://app.travis-ci.com/conda-forge/r-glmmtmb-feedstock">
+        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/r-glmmtmb-feedstock/main.svg?label=Linux">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
@@ -49,6 +58,34 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1199&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-glmmtmb-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.3" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_r_base4.2</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1199&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-glmmtmb-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_r_base4.2" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_r_base4.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1199&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-glmmtmb-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_r_base4.3" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_r_base4.2</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1199&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-glmmtmb-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_r_base4.2" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_r_base4.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1199&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-glmmtmb-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
