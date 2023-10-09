@@ -1,4 +1,4 @@
-{% set version = "1.1.7" %}
+{% set version = "1.1.8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/glmmTMB_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/glmmTMB/glmmTMB_{{ version }}.tar.gz
-  sha256: a38be6e3b8a65a928d19970aee2b13d28535e42b97a046b2f00014f78475c1f1
+  sha256: 4248f6c37a2f82543bc0160c71d6d409ff742a4b1b29b417a42f34460489bd14
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -35,8 +35,9 @@ requirements:
     - r-base
     - r-matrix
     - r-rcppeigen
-    - r-tmb >=1.7.14
+    - r-tmb >=1.9.0
     - r-lme4 >=1.1_18.9000
+    - r-mgcv
     - r-nlme
     - r-numderiv
   run:
@@ -44,8 +45,9 @@ requirements:
     - {{ native }}gcc-libs         # [win]
     - r-matrix
     - r-rcppeigen
-    - r-tmb >=1.7.14
+    - r-tmb >=1.9.0
     - r-lme4 >=1.1_18.9000
+    - r-mgcv
     - r-nlme
     - r-numderiv
 
