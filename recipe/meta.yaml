@@ -35,8 +35,9 @@ requirements:
     - r-base
     - r-matrix
     - r-rcppeigen
-    - r-tmb >=1.7.14
+    - r-tmb >=1.9.0
     - r-lme4 >=1.1_18.9000
+    - r-mgcv
     - r-nlme
     - r-numderiv
   run:
@@ -44,8 +45,9 @@ requirements:
     - {{ native }}gcc-libs         # [win]
     - r-matrix
     - r-rcppeigen
-    - r-tmb >=1.7.14
+    - r-tmb >=1.9.0
     - r-lme4 >=1.1_18.9000
+    - r-mgcv
     - r-nlme
     - r-numderiv
 
