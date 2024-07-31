@@ -10,6 +10,8 @@ source:
     - {{ cran_mirror }}/src/contrib/glmmTMB_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/glmmTMB/glmmTMB_{{ version }}.tar.gz
   sha256: 93d5a6b907b0f71f97c13134e0c450c951b3636365a369f48edb804207e78963
+  patches:
+    - patches/0001-skip-version-record.patch
 
 build:
   number: 1
