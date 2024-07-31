@@ -40,6 +40,8 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - libgomp                      # [not osx]
+    - llvm-openmp                  # [osx]
   host:
     - r-base
     - r-matrix
@@ -49,6 +51,8 @@ requirements:
     - r-mgcv
     - r-nlme
     - r-numderiv
+    - libgomp                      # [not osx]
+    - llvm-openmp                  # [osx]
   run:
     - r-base
     - r-matrix
