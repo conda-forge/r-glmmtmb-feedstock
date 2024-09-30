@@ -29,6 +29,7 @@ requirements:
     - r-mgcv                       # [build_platform != target_platform]
     - r-nlme                       # [build_platform != target_platform]
     - r-numderiv                   # [build_platform != target_platform]
+    - r-reformulas                 # [build_platform != target_platform]
     - {{ compiler('c') }}          # [not win]
     - {{ stdlib("c") }}            # [not win]
     - {{ compiler('m2w64_c') }}    # [win]
@@ -51,10 +52,10 @@ requirements:
     - r-mgcv
     - r-nlme
     - r-numderiv
-    - libgomp                      # [not osx]
-    - llvm-openmp                  # [osx]
+    - r-reformulas >=0.2.0
   run:
     - r-base
+    - {{ native }}gcc-libs         # [win]
     - r-matrix
     - r-rcppeigen
     - r-tmb >=1.9.0
@@ -62,6 +63,9 @@ requirements:
     - r-mgcv
     - r-nlme
     - r-numderiv
+    - r-reformulas >=0.2.0
+    - libgomp                      # [not osx]
+    - llvm-openmp                  # [osx]
 
 test:
   commands:
