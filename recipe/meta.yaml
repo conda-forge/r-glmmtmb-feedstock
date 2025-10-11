@@ -12,6 +12,10 @@ source:
   sha256: 2a94095ef4235b371978b78ef25c9338b8523e3c2cc49eaf5bd0a48ff31cde0b
   patches:
     - patches/0001-skip-version-record.patch
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 build:
   number: 0
@@ -51,6 +55,9 @@ requirements:
     - r-mgcv
     - r-nlme
     - r-numderiv
+    - r-pbkrtest
+    - r-reformulas >=0.2.0
+    - r-sandwich
     - libgomp                      # [not osx]
     - llvm-openmp                  # [osx]
   run:
@@ -62,6 +69,9 @@ requirements:
     - r-mgcv
     - r-nlme
     - r-numderiv
+    - r-pbkrtest
+    - r-reformulas >=0.2.0
+    - r-sandwich
 
 test:
   commands:
