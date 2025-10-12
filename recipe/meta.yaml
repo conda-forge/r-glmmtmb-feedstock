@@ -10,8 +10,6 @@ source:
     - {{ cran_mirror }}/src/contrib/glmmTMB_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/glmmTMB/glmmTMB_{{ version }}.tar.gz
   sha256: 2a94095ef4235b371978b78ef25c9338b8523e3c2cc49eaf5bd0a48ff31cde0b
-  patches:
-    - patches/0001-skip-version-record.patch
   missing_dso_whitelist:
     - '*/R.dll'        # [win]
     - '*/Rblas.dll'    # [win]
